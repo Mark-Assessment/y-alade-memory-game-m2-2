@@ -41,5 +41,31 @@ function flipCard() {
             setTimeout(checkMatch, 1000);
         }
     }
+};
 
+function checkMatch() {
+    const [card1, card2] = flippedCards;
+    if (card1.dataset.shape === card2.dataset.shape) {
+        card1.classList.add('matched');
+        card2.classList.add('matched');
+        matches++;
+        document.getElementById('matches').textContent = matches;
+        if (matches === cards.length / 2) {
+            endGame(true);
+        }
+    } else {
+        card1.classList.remove('flipped');
+        card2.classList.remove('flipped');
+        card1.style.backgroundColor = '#fff';
+        card2.style.backgroundColor = '#fff';
+        card1.querySelector('svg').style.fill = '';
+        card2.querySelector('svg').style.fill = '';
+    }
+    flippedCards = [];
 }
+
+// Initialise the game
+document.addEventListener('DOMContentLoaded', () => {
+    initializeGame();
+    resetGame();
+});

@@ -1,2 +1,2 @@
-# abtract-shapes-memory-game
-A timed memory game built using javascript
+# Abtract Shapes Memory Game
+### A timed memory game built using javascript

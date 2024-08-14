@@ -43,6 +43,7 @@ function flipCard() {
     }
 };
 
+//Check if cards match
 function checkMatch() {
     const [card1, card2] = flippedCards;
     if (card1.dataset.shape === card2.dataset.shape) {
@@ -62,6 +63,35 @@ function checkMatch() {
         card2.querySelector('svg').style.fill = '';
     }
     flippedCards = [];
+}
+
+// Function to restart the game
+function resetGame() {
+    matches = 0;
+    attempts = 0;
+    timeLeft = 60;
+    gameStarted = false;
+    document.getElementById('matches').textContent = matches;
+    document.getElementById('attempts').textContent = attempts;
+    document.getElementById('time').textContent = timeLeft;
+    clearInterval(timerInterval);
+    for (let card of cards) {
+        card.classList.remove('matched', 'flipped');
+        card.style.backgroundColor = '#fff';
+        card.querySelector('svg').style.fill = '';
+    }
+    shuffleCards();
+}
+
+function startTimer() {
+    clearInterval(timerInterval);
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        document.getElementById('time').textContent = timeLeft;
+        if (timeLeft <= 0) {
+            endGame(false);
+        }
+    }, 1000);
 }
 
 // Initialise the game

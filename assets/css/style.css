@@ -11,10 +11,11 @@ body {
     align-items: center;
     background-color: #f1c73df8;
     color: #333;
-    /* justify-content: center;
-    height: 100vh;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
     overflow: hidden;
-    margin: 0; */
+    margin: 0;
 }
 
 #game-board {
@@ -23,3 +24,51 @@ body {
     gap: 15px;
     margin-top: 20px;
 }
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #fafafa;
+    border: 1px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.4s ease-in;
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card svg {
+    width: 60px;
+    height: 60px;
+    display: none;
+}
+.card.flipped svg {
+    display: block;
+}
+
+#timer {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#reset-button {
+    margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #reset-button:hover {
+            background-color: #45a049;
+}
+

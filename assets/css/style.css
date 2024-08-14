@@ -17,6 +17,11 @@ body {
     overflow: hidden;
     margin: 0;
 }
+#title {
+    font-style: italic;
+    font-size: x-large;
+    color: antiquewhite;
+}
 
 #game-board {
     display: grid;

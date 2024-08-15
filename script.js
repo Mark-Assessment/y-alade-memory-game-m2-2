@@ -16,11 +16,12 @@ function shuffleCards() {
 };
 
 function initialiseGame() {
+    shuffleCards ();
     cards = [...document.getElementsByClassName('card')];
     for (let card of cards) {
         card.addEventListener('click', flipCard);
     }
-    shuffleCards ();
+    
 }
 
 function flipCard() {

@@ -6,18 +6,12 @@ let timeLeft = 60;
 let timerInterval;
 let gameStarted = false;
 
-function turnCard() { 
-    let box = document.getElementById('test1'); 
-    box.addEventListener('click', changeCard); 
-} 
-
-function changeCard() { 
-    const tester = document.getElementById('test'); 
-    tester.classList.toggle("hide"); 
-};
 
 document.addEventListener('DOMContentLoaded', () => {
     initialiseGame();
+    cards = [...document.getElementsByClassName('card')];
+    cards.style.backgroundColor('white');
+
 });
 
 // Code to shuffle cards
@@ -29,12 +23,14 @@ function shuffleCards() {
     }
 };
 
+// Initialise game
 function initialiseGame() {
     shuffleCards ();
     cards = [...document.getElementsByClassName('card')];
-    cards = document.getElementById('test');
+    cards = document.getElementById('test1');
     for (let card of cards) {
-        card.addEventListener('click', flipCard);
+        card.style.backgroundColor.remove('white');
+        cards.addEventListener('click', flipCard);
     }    
 }
 
@@ -46,13 +42,12 @@ function flipCard() {
 
     if (flippedCards.length < 2 && !flippedCards.includes(this) && !this.classList.contains('matched')) {
         this.classList.add('flipped');
-        this.style.backgroundColor = this.dataset.color;
-        this.querySelector('card').style.fill = 'white';
+        card.classList.remove('inner');
         flippedCards.push(this);
 
         if (flippedCards.length === 2) {
-            attempts++;
             document.getElementById('attempts').textContent = attempts;
+            attempts++;
             setTimeout(checkMatch, 1000);
         }
     }
@@ -61,47 +56,50 @@ function flipCard() {
 //Check if cards match
 function checkMatch() {
     const [card1, card2] = flippedCards;
-    if (card1.dataset.shape === card2.dataset.shape) {
+    if (card1.dataset.image === card2.dataset.image) {
         card1.classList.add('matched');
         card2.classList.add('matched');
         matches++;
         document.getElementById('matches').textContent = matches;
         if (matches === cards.length / 2) {
-            endGame(true);
+            alert('You have made a match!')
+            // endGame(true);
         }
     } else {
         card1.classList.remove('flipped');
         card2.classList.remove('flipped');
-        card1.style.backgroundColor = '#fff';
-        card2.style.backgroundColor = '#fff';
-        card1.querySelector('svg').style.fill = '';
-        card2.querySelector('svg').style.fill = '';
     }
     flippedCards = [];
 }
 
-function resetGame() {
-    const resetButton = document.getElementById('reset-button');
-    resetButton.addEventListener('click', resetGame);
-}
+function turnCard() { 
+    let box = document.getElementById('test1'); 
+    box.addEventListener('click', changeCard); 
+} 
+
+function changeCard() { 
+    const tester = document.getElementById('test'); 
+    tester.classList.toggle("hide"); 
+};
+
+document.getElementById('reset-button').addEventListener('click', resetGame);
 
 // Function to restart the game
 function resetGame() {
+    document.getElementById('matches').textContent = matches;
+    document.getElementById('attempts').textContent = attempts;
+    document.getElementById('time').textContent = timeLeft;
     matches = 0;
     attempts = 0;
     timeLeft = 60;
     gameStarted = false;
-    document.getElementById('matches').textContent = matches;
-    document.getElementById('attempts').textContent = attempts;
-    document.getElementById('time').textContent = timeLeft;
     clearInterval(timerInterval);
-    for (let card of cards) {
+    for (const card of cards) {
         card.classList.remove('matched', 'flipped');
-        card.style.backgroundColor = '#fff';
-        card.querySelector('svg').style.fill = '';
     }
     shuffleCards();
 }
+
 
 function startTimer() {
     clearInterval(timerInterval);
@@ -114,4 +112,4 @@ function startTimer() {
     }, 1000);
 }
 
-// Initialise the game
+

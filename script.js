@@ -6,6 +6,20 @@ let timeLeft = 60;
 let timerInterval;
 let gameStarted = false;
 
+function turnCard() { 
+    let box = document.getElementById('test1'); 
+    box.addEventListener('click', changeCard); 
+} 
+
+function changeCard() { 
+    const tester = document.getElementById('test'); 
+    tester.classList.toggle("hide"); 
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    initialiseGame();
+});
+
 // Code to shuffle cards
 function shuffleCards() {
     let gameBoard = document.getElementById('game-board');
@@ -18,10 +32,10 @@ function shuffleCards() {
 function initialiseGame() {
     shuffleCards ();
     cards = [...document.getElementsByClassName('card')];
+    cards = document.getElementById('test');
     for (let card of cards) {
         card.addEventListener('click', flipCard);
-    }
-    
+    }    
 }
 
 function flipCard() {
@@ -33,7 +47,7 @@ function flipCard() {
     if (flippedCards.length < 2 && !flippedCards.includes(this) && !this.classList.contains('matched')) {
         this.classList.add('flipped');
         this.style.backgroundColor = this.dataset.color;
-        this.querySelector('svg').style.fill = 'white';
+        this.querySelector('card').style.fill = 'white';
         flippedCards.push(this);
 
         if (flippedCards.length === 2) {
@@ -66,6 +80,11 @@ function checkMatch() {
     flippedCards = [];
 }
 
+function resetGame() {
+    const resetButton = document.getElementById('reset-button');
+    resetButton.addEventListener('click', resetGame);
+}
+
 // Function to restart the game
 function resetGame() {
     matches = 0;
@@ -96,7 +115,3 @@ function startTimer() {
 }
 
 // Initialise the game
-document.addEventListener('DOMContentLoaded', () => {
-    initializeGame();
-    resetGame();
-});

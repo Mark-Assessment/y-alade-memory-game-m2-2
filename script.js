@@ -54,7 +54,7 @@ function flipCard() {
 
     if (flippedCards.length < 2 && !flippedCards.includes(this) && !this.classList.contains('matched')) {
         this.classList.add('flipped');
-        card.classList.remove('');
+        card.classList.remove('hide');
         flippedCards.push(this);
 
         if (flippedCards.length === 2) {

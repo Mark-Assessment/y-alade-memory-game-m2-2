@@ -9,8 +9,8 @@ let gameStarted = false;
 
 document.addEventListener('DOMContentLoaded', () => {
     initialiseGame();
-    cards = [...document.getElementsByClassName('card')];
-    cards.style.backgroundColor('white');
+    card = [...document.getElementsByClassName('card')];
+    card.style.backgroundColor('white');
 
 });
 
@@ -29,12 +29,24 @@ function initialiseGame() {
     cards = [...document.getElementsByClassName('card')];
     cards = document.getElementById('test1');
     for (let card of cards) {
-        card.style.backgroundColor.remove('white');
+        // card.style.backgroundColor.remove('white');
         cards.addEventListener('click', flipCard);
     }    
 }
 
+function turnCard() { 
+    let box = document.getElementsByClassName('card'); 
+    box.addEventListener('click', flipCard); 
+} 
+
+// function changeCard() { 
+     
+// };
+
 function flipCard() {
+    const cardChanger = document.getElementsByClassName('card'); 
+    cardChanger.classList.toggle("hide");
+
     if (!gameStarted) {
         startTimer();
         gameStarted = true;
@@ -42,7 +54,7 @@ function flipCard() {
 
     if (flippedCards.length < 2 && !flippedCards.includes(this) && !this.classList.contains('matched')) {
         this.classList.add('flipped');
-        card.classList.remove('inner');
+        card.classList.remove('');
         flippedCards.push(this);
 
         if (flippedCards.length === 2) {
@@ -72,15 +84,6 @@ function checkMatch() {
     flippedCards = [];
 }
 
-function turnCard() { 
-    let box = document.getElementById('test1'); 
-    box.addEventListener('click', changeCard); 
-} 
-
-function changeCard() { 
-    const tester = document.getElementById('test'); 
-    tester.classList.toggle("hide"); 
-};
 
 document.getElementById('reset-button').addEventListener('click', resetGame);
 

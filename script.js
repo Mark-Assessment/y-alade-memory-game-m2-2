@@ -9,7 +9,7 @@ let cards = [];
 let flippedCards = [];
 let matches = 0;
 let attempts = 0;
-let timeLeft = 60;
+let timeLeft = 90;
 let gameInterval;
 
 const cardData = [
@@ -48,7 +48,7 @@ function createCard(card, index) {
             </div>
         </div>
         `;
-    // cardElement.addEventListener('click', flipCard);
+    cardElement.addEventListener('click', flipCard);
     return cardElement;
 }
 
@@ -71,16 +71,22 @@ function initialiseGame() {
   });
 }
 
-let individualCard = document.getElementById('card-inner');
-individualCard.addEventListener('click', flipCard);
-
+// Function to turn card
 function flipCard() {    
 
     if (flippedCards.length < 2 && !this.classList.contains('flipped')) {
         this.classList.add('flipped');
         flippedCards.push(this);
+    };
+
+    // Function start timer with first card flip
+    function startTimer () {
+        gameInterval = setInterval(() => {
+            timeLeft--;}
+    )
     }
-}
+
+};
 
 
 

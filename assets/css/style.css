@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     /* overflow: hidden; */
     margin: 0;
-    background-image: url('assets/images/rainbow-background2.jpg');
+    /* background-image: url('assets/images/rainbow-background2.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -50,7 +50,14 @@ body::before {
     font-style: italic;
     font-size: xx-large;
     color: rgb(52, 47, 39);
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+#tagline {
+    color: red;
+    font-size: 80%;
+    font-weight: light;
+    justify-content: center;
 }
 
 #game-board {

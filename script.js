@@ -10,8 +10,19 @@ let flippedCards = [];
 let matches = 0;
 let attempts = 0;
 let timeLeft = 60;
-let timerInterval;
-let gameStarted = false;
+let gameInterval;
+
+const cardData = [
+    {image: 'assets/images/circle.png'},
+    {image: 'assets/images/diamond.png'},
+    {image: 'assets/images/heart.png'},
+    {image: 'assets/images/hexagon.png'},
+    {image: 'assets/images/pentagon.png'},
+    {image: 'assets/images/square.png'},
+    {image: 'assets/images/star.png'},
+    {image: 'assets/images/triangle.png'},
+];
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -34,7 +34,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// Code to shuffle cards
+// Function to create cards
+function createCard(card, index) {
+    const cardElement = document.createElement('div');
+    cardElement.classList.add('card');
+    cardElement.dataset.index('index');
+    cardElement.innerHTML = `
+        <div class = 'card-inner'>
+            <div class = 'card-front'>
+                <img src='${card.image}' alt = 'Card Front'>Card with image</img>
+            </div>
+
+            <div class = 'card-back'>
+                <img src='' alt = 'Card Back'>Card with no image</img>
+            </div>
+        </div>
+        `;
+    cardElement.addEventListener('click', flipCard);
+    return cardElement;
+}
+
+// Function to shuffle cards
 function shuffleCards() {
     let gameBoard = document.getElementById('game-board');
     let cardElements = [...gameBoard.children];

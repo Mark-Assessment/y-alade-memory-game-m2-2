@@ -24,18 +24,11 @@ body {
     position: relative;
 }
 
-/* #test {
-    position: absolute;
-    background: antiquewhite;
-    font-weight: bold;
-    font-size: larger;
-}
-
 .hide {
     display: none;
 } */
 
-body::before {
+/* body::before {
     content: '';
     position: absolute;
     top: 0;
@@ -44,7 +37,7 @@ body::before {
     left: 0;
     background-color: rgba(255, 255, 255, 0.2); 
     z-index: -1;
-}
+} */
 
 .title {
     font-style: italic;
@@ -55,7 +48,7 @@ body::before {
 
 #tagline {
     color: red;
-    font-size: 80%;
+    font-size: 150%;
     font-weight: light;
     justify-content: center;
 }
@@ -78,8 +71,8 @@ body::before {
 }
 
 .card {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     perspective: 10px;
     background-color: #fafafa;
     border: 1px;
@@ -147,8 +140,8 @@ body::before {
     display: inline-flex;
     background-color: #4CAF50;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border: 10px black;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
         }

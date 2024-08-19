@@ -39,11 +39,11 @@ function createCard(card, index) {
     cardElement.dataset.index = index;
     cardElement.innerHTML = `
         <div class = 'card card-inner'>
-            <div class = 'card-front'> Card with no image
+            <div class = 'card-front'>
                 <img src='assets/images/card-back.png' alt='Card Back'>
             </div>
 
-            <div class = 'card-back'> Card with image
+            <div class = 'card-back'>
                 <img src='${card.image}' alt='Card Front'>
             </div>
         </div>
@@ -71,14 +71,16 @@ function initialiseGame() {
   });
 }
 
-// function turnCard() { 
-//     let box = document.getElementsByClassName('card'); 
-//     box.addEventListener('click', flipCard); 
-// } 
+let individualCard = document.getElementById('card-inner');
+individualCard.addEventListener('click', flipCard);
 
-// function changeCard() { 
-     
-// };
+function flipCard() {    
+
+    if (flippedCards.length < 2 && !this.classList.contains('flipped')) {
+        this.classList.add('flipped');
+        flippedCards.push(this);
+    }
+}
 
 
 

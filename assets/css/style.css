@@ -46,10 +46,11 @@ body::before {
     z-index: -1;
 }
 
-#title {
+.title {
     font-style: italic;
     font-size: xx-large;
-    color: antiquewhite;
+    color: rgb(52, 47, 39);
+    margin-bottom: 60px;
 }
 
 #game-board {
@@ -57,6 +58,15 @@ body::before {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin-top: 20px;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0 20px 0;
 }
 
 .card {
@@ -115,14 +125,6 @@ body::before {
     height: 100%;
     object-fit: cover;
     /* display: none; */
-}
-
-.game-info {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px;
 }
 
 #timer {

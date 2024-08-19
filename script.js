@@ -27,7 +27,6 @@ const cardData = [
 let gameCards = [...cardData, ...cardData];
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     initialiseGame();
     card = [...document.getElementsByClassName('card')];

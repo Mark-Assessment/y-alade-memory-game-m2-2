@@ -24,7 +24,7 @@ body {
     position: relative;
 }
 
-#test {
+/* #test {
     position: absolute;
     background: antiquewhite;
     font-weight: bold;
@@ -33,7 +33,7 @@ body {
 
 .hide {
     display: none;
-}
+} */
 
 body::before {
     content: '';
@@ -80,11 +80,49 @@ body::before {
     transform: scale(1.05);
 }
 
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+.card-front {
+    background-color: #ffffff;
+}
+.card-back {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+}
+
 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     /* display: none; */
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
 }
 
 #timer {

@@ -1,3 +1,10 @@
+const gameBoard = document.getElementById('game-board');
+const timer = document.getElementById('timer');
+const matchesCounter = document.getElementById('matches');
+const attemptsCounter = document.getElementById('attempts');
+const resetButton = document.getElementById('reset-button');
+
+
 let cards = [];
 let flippedCards = [];
 let matches = 0;

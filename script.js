@@ -23,6 +23,9 @@ const cardData = [
     {image: 'assets/images/triangle.png'},
 ];
 
+// Create copies of card data to create pairs
+let gameCards = [...cardData, ...cardData];
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -14,6 +14,7 @@ let attempts = 0;
 let timeLeft = 90;
 let gameInterval;
 let canFlip = true;
+let isGameStarted = false;
 
 const cardData = [
     {image: 'assets/images/circle.png', name: 'circle'},
@@ -78,6 +79,11 @@ function flipCard() {
 
     this.classList.add('flipped');
 
+    if (!isGameStarted) {
+        startTimer();
+        isGameStarted = true;
+    }
+
     if (!firstCard) {
         firstCard = this;
     } else {
@@ -86,7 +92,6 @@ function flipCard() {
         checkForMatch();
     }
 }
-
     function checkForMatch() {
         attempts++;
         attemptsCounter.textContent = attempts;
@@ -116,7 +121,6 @@ function flipCard() {
         canFlip = true;
     }
 
-
     // Function start timer with first card flip
     function startTimer () {
         gameInterval = setInterval(() => {
@@ -126,6 +130,12 @@ function flipCard() {
             endGame(false);
         }
     }, 1000);
+}
+
+function endGame(isWin) {
+    clearInterval(gameInterval);
+    canFlip = false;
+    if 
 }
         
 

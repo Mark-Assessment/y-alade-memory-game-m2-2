@@ -40,6 +40,7 @@ body {
 } */
 
 .title {
+    text-align: center;
     font-style: italic;
     font-size: xx-large;
     color: rgb(52, 47, 39);
@@ -75,7 +76,7 @@ body {
     width: 120px;
     height: 120px;
     perspective: 10px;
-    /* background-color: #fafafa; */
+    background-color: #fafafa;
     border: 1px;
     /* border-radius: 20px; */
     display: flex;
@@ -115,6 +116,10 @@ body {
     /* border: 2px solid #000; */
 }
 .card-front {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg); */
     /* background-color: #ffffff; */
 }
 .card-back {

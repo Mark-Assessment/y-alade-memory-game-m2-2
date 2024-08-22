@@ -30,7 +30,7 @@ const cardData = [
 // Create copies of card data to create pairs
 let gameCards = [...cardData, ...cardData];
 
-
+// Initialise game when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     initialiseGame();
 });
@@ -70,6 +70,17 @@ function initialiseGame() {
   cards.forEach((card, index) => {
     gameBoard.appendChild(createCard(card, index));
   });
+  matches = 0;
+  attempts = 0;
+  timeLeft = 90;
+  matchesCounter.textContent = matches;
+  attemptsCounter.textContent = attempts;
+  timer.textContent = timeLeft;
+  clearInterval(gameInterval);
+  isGameStarted = false;
+  canFlip = true;
+  firstCard = null;
+  secondCard = null;
 }
 
 // Function to turn card
@@ -139,9 +150,11 @@ function endGame(isWin) {
     if (isWin) {
         alert(`Well done! You got all the matches in ${attempts} attempts with ${timeLeft} seconds left`);
     } else {
-        alert(`Game over! You found ${matches} matches in ${attempts} attempts.`)
+        alert(`Game over! You found ${matches} matches in ${attempts} attempts.`);
     }
 }
+
+resetButton.addEventListener('click', initialiseGame)
         
 
 

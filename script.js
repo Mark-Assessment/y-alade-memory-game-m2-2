@@ -92,37 +92,37 @@ function flipCard() {
         checkForMatch();
     }
 }
-    function checkForMatch() {
-        attempts++;
-        attemptsCounter.textContent = attempts;
-    
-        const isMatch = cards[parseInt(firstCard.dataset.index)].name === cards[parseInt(secondCard.dataset.index)].name;
-    
-        if (isMatch) {
-            matches++;
-            matchesCounter.textContent = matches;
-            resetCards();
-            if (matches === cardData.length) {
-                endGame(true);
-            }
-        } else {
-            setTimeout(unflipCards, 1000);
-        }
-    }
-    
-    function unflipCards() {
-        firstCard.classList.remove('flipped');
-        secondCard.classList.remove('flipped');
-        resetCards();
-    }
-    
-    function resetCards() {
-        [firstCard, secondCard] = [null, null];
-        canFlip = true;
-    }
+function checkForMatch() {
+    attempts++;
+    attemptsCounter.textContent = attempts;
 
-    // Function start timer with first card flip
-    function startTimer () {
+    const isMatch = cards[parseInt(firstCard.dataset.index)].name === cards[parseInt(secondCard.dataset.index)].name;
+
+    if (isMatch) {
+        matches++;
+        matchesCounter.textContent = matches;
+        resetCards();
+        if (matches === cardData.length) {
+            endGame(true);
+        }
+    } else {
+        setTimeout(unflipCards, 1000);
+    }
+}   
+    
+function unflipCards() {
+    firstCard.classList.remove('flipped');
+    secondCard.classList.remove('flipped');
+    resetCards();
+}
+    
+function resetCards() {
+    [firstCard, secondCard] = [null, null];
+    canFlip = true;
+}
+
+// Function start timer with first card flip
+function startTimer () {
         gameInterval = setInterval(() => {
             timeLeft--;
             timer.textContent = timeLeft;
@@ -132,10 +132,15 @@ function flipCard() {
     }, 1000);
 }
 
+// Function to end game
 function endGame(isWin) {
     clearInterval(gameInterval);
     canFlip = false;
-    if 
+    if (isWin) {
+        alert(`Well done! You got all the matches in ${attempts} attempts with ${timeLeft} seconds left`);
+    } else {
+        alert(`Game over! You found ${matches} matches in ${attempts} attempts.`)
+    }
 }
         
 

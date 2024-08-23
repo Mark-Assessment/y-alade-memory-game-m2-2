@@ -14,8 +14,25 @@
 <body>
     <div class="title">
         <h1>Rainbow Shapes Memory Game</h1>
-        <p id="tagline">Find all the matches before the time runs out!</p>
+        <p id="tagline">
+            Find all the matches before the time runs out!
+        </p>
     </div>
+
+    <button id="instruction-button">How to play
+        <div class="modal">
+            <div class="modal-content">
+                <h4>Welcome to the Rainbow Shapes.<h4>
+                <p>Click on the first rainbow card to start the timer.</p>
+                <p>You have 90 seconds to find all the rainbow matches.</p>
+                <p>If two cards you select do not match, they will automatically flip back over.</p>
+                <p>Finally, click to reset the game if you want to start again.</p>
+                <p>Happy matching!</p>
+
+            <div class="modal-close">X</div>
+            </div>
+        </div>
+    </button>
 
     <div id="game-info">
         <p><strong>Timer:</strong> <span id="timer">90</span>s</p>

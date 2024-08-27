@@ -3,6 +3,9 @@ const timer = document.getElementById('timer');
 const matchesCounter = document.getElementById('matches');
 const attemptsCounter = document.getElementById('attempts');
 const resetButton = document.getElementById('reset-button');
+const modal = document.getElementById('instructionModal');
+const btn = document.getElementById('instruction-button');
+const span = document.querySelector('modal-close');
 
 
 let cards = [];
@@ -15,6 +18,9 @@ let timeLeft = 90;
 let gameInterval;
 let canFlip = true;
 let isGameStarted = false;
+
+btn.addEventListener('click', toggleModal);
+span.addEventListener('click', closeModal)
 
 const cardData = [
     {image: 'assets/images/circle.png', name: 'circle'},
@@ -53,6 +59,8 @@ function createCard(card, index) {
     cardElement.addEventListener('click', flipCard);
     return cardElement;
 }
+
+// Function to open the modal
 
 // Function to shuffle cards
 function shuffleCards(cards) {

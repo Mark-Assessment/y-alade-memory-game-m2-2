@@ -61,6 +61,9 @@ function createCard(card, index) {
 }
 
 // Function to open the modal
+function toggleModal() {
+    modal.style.display = 'flex';
+}
 
 // Function to shuffle cards
 function shuffleCards(cards) {

@@ -5,7 +5,7 @@ const attemptsCounter = document.getElementById('attempts');
 const resetButton = document.getElementById('reset-button');
 const modal = document.getElementById('instructionModal');
 const btn = document.getElementById('instruction-button');
-const span = document.querySelector('modal-close');
+const closeBtn = document.querySelector('.modal-close');
 
 
 let cards = [];
@@ -19,8 +19,6 @@ let gameInterval;
 let canFlip = true;
 let isGameStarted = false;
 
-btn.addEventListener('click', toggleModal);
-span.addEventListener('click', closeModal)
 
 const cardData = [
     {image: 'assets/images/circle.png', name: 'circle'},
@@ -61,9 +59,26 @@ function createCard(card, index) {
 }
 
 // Function to open the modal
-function toggleModal() {
+function openModal() {
     modal.style.display = 'flex';
 }
+
+//Function to close modal by clicking on [x]
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+// Modal event listeners
+btn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+
+// Close modal hwen clicking outside of it
+window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
+
 
 // Function to shuffle cards
 function shuffleCards(cards) {

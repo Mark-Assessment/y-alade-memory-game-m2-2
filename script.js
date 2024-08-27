@@ -173,23 +173,27 @@ function startTimer () {
     }, 1000);
 }
 
-// // Function to end game
-// function endGame(isWin) {
-//     clearInterval(gameInterval);
-//     canFlip = false;
-//     if (isWin) {
-//         alert(`Well done! You got all the matches in ${attempts} attempts with ${timeLeft} seconds left`);
-//     } else {
-//         alert(`Game over! You found ${matches} matches in ${attempts} attempts.`);
-//     }
-// }
-
+// Show end game message in modal
 function showEndGameModal(title, message) {
     endGameTitle.textContent = title;
     endGameMessage.textContent = message;
     endGameModal.style.display = 'flex';
 }
 
+// Function to end game
+function endGame(isWin) {
+    clearInterval(gameInterval);
+    canFlip = false;
+    if (isWin) {
+        showEndGameModal('Well done!',
+            `Well done! You got all the matches in ${attempts} attempts with ${timeLeft} seconds left`
+        );
+    } else {
+        showEndGameModal('Game over',
+            `Game over! You found ${matches} matches in ${attempts} attempts.`
+        );
+    }
+}
 
 
 resetButton.addEventListener('click', initialiseGame)

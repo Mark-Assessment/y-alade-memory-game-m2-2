@@ -6,6 +6,10 @@ const resetButton = document.getElementById('reset-button');
 const modal = document.getElementById('instructionModal');
 const btn = document.getElementById('instruction-button');
 const closeBtn = document.querySelector('.modal-close');
+const endGameModal = document.getElementById('endGameModal');
+const endGameTitle = document.getElementById('endGameTitle');
+const endGameMessage = document.getElementById('endGameMessage');
+const endGameCloseBtn = document.getElementById('endGameCloseBtn');
 
 
 let cards = [];
@@ -169,16 +173,24 @@ function startTimer () {
     }, 1000);
 }
 
-// Function to end game
-function endGame(isWin) {
-    clearInterval(gameInterval);
-    canFlip = false;
-    if (isWin) {
-        alert(`Well done! You got all the matches in ${attempts} attempts with ${timeLeft} seconds left`);
-    } else {
-        alert(`Game over! You found ${matches} matches in ${attempts} attempts.`);
-    }
+// // Function to end game
+// function endGame(isWin) {
+//     clearInterval(gameInterval);
+//     canFlip = false;
+//     if (isWin) {
+//         alert(`Well done! You got all the matches in ${attempts} attempts with ${timeLeft} seconds left`);
+//     } else {
+//         alert(`Game over! You found ${matches} matches in ${attempts} attempts.`);
+//     }
+// }
+
+function showEndGameModal(title, message) {
+    endGameTitle.textContent = title;
+    endGameMessage.textContent = message;
+    endGameModal.style.display = 'flex';
 }
+
+
 
 resetButton.addEventListener('click', initialiseGame)
         

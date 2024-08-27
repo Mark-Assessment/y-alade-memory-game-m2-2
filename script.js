@@ -120,6 +120,7 @@ function flipCard() {
 
     this.classList.add('flipped');
 
+    // Start timer
     if (!isGameStarted) {
         startTimer();
         isGameStarted = true;

@@ -97,6 +97,7 @@ body {
     border-radius: 5px;
     width: 80%;
     max-width: 500px;
+    text-align: center;
     position: relative;
 }
 
@@ -231,6 +232,11 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    margin-bottom: 15px;
+}
+
+#endGameTitle {
+    font-size: 24px;
     margin-bottom: 15px;
 }
 

@@ -180,6 +180,11 @@ function showEndGameModal(title, message) {
     endGameModal.style.display = 'flex';
 }
 
+function closeEndGameModal() {
+    endGameModal.style.display = 'none';
+    initialiseGame(); // Game will reset when modal is closed
+}
+
 // Function to end game
 function endGame(isWin) {
     clearInterval(gameInterval);
@@ -194,6 +199,16 @@ function endGame(isWin) {
         );
     }
 }
+
+//Event listener for 'Play Again' button
+endGameCloseBtn.addEventListener('click', closeEndGameModal);
+
+// Click outside of modal to close it
+window.addEventListener('click', function(event) {
+    if (event.target === endGameModal) {
+        closeEndGameModal();
+    }
+});
 
 
 resetButton.addEventListener('click', initialiseGame)

@@ -18,7 +18,7 @@ let secondCard = '';
 let flippedCards = [];
 let matches = 0;
 let attempts = 0;
-let timeLeft = 90;
+let timeLeft = 60;
 let gameInterval;
 let canFlip = true;
 let isGameStarted = false;

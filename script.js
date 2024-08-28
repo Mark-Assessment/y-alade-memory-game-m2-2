@@ -102,7 +102,7 @@ function initialiseGame() {
   });
   matches = 0;
   attempts = 0;
-  timeLeft = 90;
+  timeLeft = 60;
   matchesCounter.textContent = matches;
   attemptsCounter.textContent = attempts;
   timer.textContent = timeLeft;

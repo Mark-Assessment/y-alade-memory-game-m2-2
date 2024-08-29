@@ -1,15 +1,18 @@
 <div style="background-color: ; padding: 20px;">
 
-![Rainbow Shapes Memory Game logo](assets/images/rsmg-logo.png)
+<img src='assets/images/rsmg-logo.png' alt='Rainbow Shapes Memory Game logo'>
 
-# Rainbow Shapes Memory Game
 ## A timed memory game built using javascript. 
+
+[Visit the site here.](https://yemsala.github.io/Rainbow-Shapes-Memory-Game/)
 
 ### Introduction
 
 Welcome to the Rainbow Shapes Memory Game, built for my Milestone 2 project!  
-Dive into a world of vibrant colors and playful shapes with this Rainbow Shapes Memory Game! 
-This timed web-based game, built using HTML5/CSS & Javascript, challenges your memory and reflexes as you match pairs of colorful geometric shapes against the clock.
+Dive into a world of vibrant colors and playful shapes with this Rainbow Shapes Memory Game!
+
+This timed web-based game, built using HTML5/CSS & Javascript, challenges your memory and reflexes as you match pairs of colorful geometric shapes against the clock. 
+You can beat your score by getting all the matches with fewer attempts and with more time left on the clock.
 
 This game is perfect for players of all ages to help build and maintain memory muscles and has the following features:
 
@@ -20,58 +23,44 @@ This game is perfect for players of all ages to help build and maintain memory m
 - Easy-to-understand instructions for new players
 - A responsive design that works on desktop and mobile devices
 
-# User Stories
+<h2 align-items="center"><img src="assets/images/rsmg-site-mockup.png"></h2>
 
-1. As a player, I want to see a visually appealing game board with colorful cards, so that I'm immediately engaged with the game.
+### User Stories
 
-2. As a new player, I want to access game instructions easily, so that I can quickly understand how to play the game.
+    ✅ - successfuly implemented
 
-3. As a player, I want to start the game by flipping my first card, so that I have control over when the timer begins.
+    ❌ - yet to be implemented
 
-4. As a player, I want to see a timer counting down from 90 seconds, so that I know how much time I have left to complete the game.
 
-5. As a player, I want to see my current number of matches and attempts, so that I can track my progress throughout the game.
+✅ 1. As a player, I want to see a visually appealing game board, so that I'm immediately engaged with the game.
 
-6. As a player, I want cards to flip smoothly when clicked, so that I can enjoy a satisfying interactive experience.
+✅ 2. As a new player, I want to access game instructions easily, so that I can quickly understand how to play the game.
 
-7. As a player, I want mismatched cards to automatically flip back after a short delay, so that I can easily continue playing without manual intervention.
+✅3. As a player, I want to the timer to start only when I begin to play the game, so that I have control over when the timer begins.
 
-8. As a player, I want matched cards to remain face-up, so that I can see my progress in completing the board.
+✅ 4. As a player, I want to see a timer counting down, so that I know how much time I have left to complete the game.
 
-9. As a player, I want to receive a congratulatory message when I successfully match all cards before the timer runs out, so that I feel a sense of achievement.
+✅ 5. As a player, I want to see my current number of matches and attempts, so that I can track my progress throughout the game.
 
-10. As a player, I want to see a "Game Over" message if I don't match all cards within the time limit, so that I understand why the game ended.
+✅ 6. As a player, I want cards to easily know when I have successfully made a match or not, so that I can enjoy a satisfying interactive experience.
 
-11. As a player, I want the option to play again after the game ends, so that I can try to improve my performance or enjoy the game multiple times.
+✅ 7. As a player, I want to receive a congratulatory message when I successfully match all cards before the timer runs out, so that I feel a sense of achievement.
 
-12. As a player, I want a reset button available during the game, so that I can start over at any time if I choose.
+✅ 8. As a player, I want to know when the game is over if I don't match all cards within the time limit, so that I understand why the game ended.
 
-13. As a player, I want the game to be responsive and playable on different devices, so that I can enjoy it on my desktop, tablet, or smartphone.
+✅ 9. As a player, I want the option to play again after the game ends, so that I can try to improve my performance or enjoy the game multiple times.
 
-14. As a player with visual impairments, I want the game to have good color contrast and be compatible with screen readers, so that I can play the game comfortably.
-----------------------------------------------------------------------------------
+✅ 10. As a player, I want the option to reset the game, so that I can start over at any time if I choose.
 
-![Netball Fanatix logo](assets/images/netball-fanatix-logo.png)
+✅ 11. As a player, I want the game to be responsive and playable on different devices, so that I can enjoy it on my desktop, tablet or mobile.
 
-# Netball Fanatix
-## Fanatic about netball
+❌ 12. As a player, I want to be able to save my scores so I can try to beat them later
 
-### Introduction
-
-Welcome to Netball Fanatix! 
-This is a static front-end website designed to teach people about the game of netball. 
-The site provides useful and comprehensive education on netball rules, positions, skills and more to help users understand and enjoy the sport.
-
-## Website 
-
-![Responsivity screenshot](assets/images/netball-fanatix-responsive-screenshot.png)
-
-Visit the site at: [Netball Fanatix](https://yemsala.github.io/netball-fanatic/index.html)
+❌ 13. As a player, I want to be able to play easy and harder levels so I can challenge my memory further
 
 ## Table of Contents
 
 - [Project Goals](#project-goals)
-- [Pages](#pages)
 - [Features](#features)
 - [User Experience](#user-experience)
     - [User Stories](#user-stories)
@@ -303,11 +292,7 @@ Each page of the project was thoroughly checked for syntax errors using the W3C 
 
 ### Bug fixes
 
-1. I had a lot of issues with my initial workspace being set up on Gitpod, which I was unable to resolve. I ended up swithcing to VS-Code Desktop as an IDE and started working locally so I could continue with my project development.
-However, I was later able to create a new Gitpod workspace and link it with my project on VS-Code but that came with a new set of problems because I ended up working on 2 separate branches and some changes were not being pushed to the main.
-I did a lot of work to merge the work in both branches and continue working in one space eventually.
-
-2. On the 'About Netball' page, the bib positions column was overlapping the 'rules' column in mobile view. So I did some work to hide both columns in mobile view to ensure the layout of the page remained clean - see screenshot 
+1. I notice that it would be more helpful for the scoreboard to be 'sticky' on narrow/mobile view so that the timer is still visible for a better user experience. I am doing some work to adjust the code so that this is possible on mobile view when the user scrolls down the page and they know how much time they have left.
 
 | Desktop       | Mobile           |
 | ------------- |:-------------:|
@@ -380,12 +365,12 @@ Click [Here](https://docs.github.com/en/repositories/creating-and-managing-repos
 
 ### References
 
-- Source: YouTube | Arjun Khara | [https://youtu.be/OV8MVmtgmoY]
-    - Used for inspiration for flip card code
+- Source: YouTube | 
 - Source: W3Schools | [https://www.w3schools.com/]
     - Used for HTML & CSS code 
-- Source: Chat GPT [https://chatgpt.com/]
+- Source: Chat GPT
     - For content & research
+? https://websitemockupgenerator.com/
 - Picture References
     - Source: Cynon Netball Club | [https://connectrct.org.uk/activity/cynon-back-to-netball-club]
     - Source: Gilbert Netball | [https://www.gilbert-netball.com/blogs/netball/netball-101]

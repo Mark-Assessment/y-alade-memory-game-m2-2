@@ -1,39 +1,24 @@
-<div style="background-color: aqua; padding: 20px;">
+<div style="background-color: ; padding: 20px;">
+
+![Rainbow Shapes Memory Game logo](assets/images/rsmg-logo.png)
 
 # Rainbow Shapes Memory Game
-### This is a timed memory game built using javascript. 
-### Flip the cards over to reveal the matches. 
-#### How many matches can you make before the timer runs out!
+## A timed memory game built using javascript. 
 
+### Introduction
 
-#### Steps of the game
-1. Game resets when the page loads.
-    - All cards should be white (images hidden).
-    - Shuffle cards
-    - Timer on 60 seconds
-    - Matches and attempts at '0'
+Welcome to the Rainbow Shapes Memory Game, built for my Milestone 2 project!  
+Dive into a world of vibrant colors and playful shapes with this Rainbow Shapes Memory Game! 
+This timed web-based game, built using HTML5/CSS & Javascript, challenges your memory and reflexes as you match pairs of colorful geometric shapes against the clock.
 
-2. Click on a card to begin game
-    - Timer starts
-    - Reveal card image
-    - If 2 cards are selected and they don't match, both card images should be hidden again
+This game is perfect for players of all ages to help build and maintain memory muscles and has the following features:
 
-3. When you get a match
-    - Two cards are flipped and the images match, both card images should stay visible
-    - The 'Matches' score increments
-    - Try to get all the matches before the timer runs out
-
-4. The 'Attempts' increment every time 2 cards are selected
-
-5. Game ends when:
-    - All matches are made before/by the time the timer runs out
-        - Alert message - "Congratulations, you have won the game".
-    - All matches are not made before the timer runs out
-        - Alert message - `Game over - you got $X matches in $X attempts`
-    - User clicks 'Reset Game' button
-        - Timer resets to 0
-        - All card images are hidden again
-        - Matches and attempts score reset to '0'
+- A visually appealing interface with smooth animations
+- 16 cards featuring 8 unique rainbow-colored shapes
+- A 60-second countdown timer to add urgency
+- Real-time tracking of matches and attempts
+- Easy-to-understand instructions for new players
+- A responsive design that works on desktop and mobile devices
 
 # User Stories
 

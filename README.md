@@ -92,25 +92,29 @@ This game is perfect for players of all ages to help build and maintain memory m
 
 ### Existing Features
 
-- A mobile-first, fully responsive site design accessible on all types of devices.
-- Informative content on netball history, rules, positions and skills.
-- Links to access other areas within the site as well as external sites.
-- Tooltip images to learn more about positions.
-- Tip cards to reveal useful advice about how to play netball.
-- iframe YouTube videos to learn more on Tips & Skills page.
-- Easy navigation with a main menu and structured layout.
-- Contact page with contact form for user inquiries and feedback.
-- Header & footer navigation used on all pages across the site.
-- Navigation toggle button (hamburger) on narrow devices.
-- Social media link for further engagement.
+- Cards are shuffled and placed randomly at the start of each game.
+
+- A gameboard displaying 16 cards face down. You can flip over two cards at a time by clicking on them.
+
+- If the two flipped cards don't match, they flip back over.
+
+- When you find a matching pair, the cards stay face-up and can't be clicked again.
+
+- Your attempt counter increments with every two cards flipped.
+
+- Your score increments each time you find a match.
+
+- You can start a new game or reset the current one. Cards can't be flipped until the game starts.
+
+- You have 60 seconds to find all the matches.
+
+- The game tells you if you've won or if you should try again.
 
 ### Post MVP Features
 
-- Events Section: A dedicated section or page where upcoming netball events and activities are listed.
-- Regular Updates: Frequent updates on the homepage or a news section to inform visitors about the latest events and news related to netball.
-- Calendar Integration: An integrated calendar or schedule displaying upcoming events, ensuring users can easily see what's next.
-- Engagement Features: Interactive elements like comment sections or forums where frequent visitors can discuss and suggest new content.
-- Community Involvement: Encouraging user-generated content and highlighting visitor contributions on the site, making frequent visitors feel their input is valued and implemented.
+- You can select from Easy/Intermediate/Difficult options and vary the game challenge based on selection.
+- You can register your name at the start and save your scores to be displayed. You can then continue to try to beat your earlier scores by playing new games.
+- Integrate a leaderboard so users can see previous users' scores and try to beat them.
 
 ## User Experience
 

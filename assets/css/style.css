@@ -21,18 +21,7 @@ body {
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     position: relative;
- } 
-
- body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    z-index: -1;
-}
+ }
 
 .title {
     text-align: center;
@@ -76,6 +65,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #c207c9;
+    align-items: flex-end;
 }
 
 .modal {
@@ -116,27 +106,32 @@ body {
 
 .game-info {
     display: flex;
-    flex-direction: row;
-    display: inline-flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     max-width: 600px;
     margin: 20px 0 20px 0;
     background-color: rgba(189, 6, 189, 0.7);
-    padding: 10px;
+    padding: 20px;
     border: 2px solid #333;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-style: groove;
 }
 
 #game-info h2 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 15px;
-    color: 15px;
+    color: #fafafa;
+    font-weight: bold;
+    text-shadow: #333;
     font-size: 24px;
     text-transform: capitalize;
     text-decoration: wavy;
+    border-style: groove;
+    padding: 10px;
+    background-color: #4caf4fab;
 }
 
 #game-info p {
@@ -147,6 +142,23 @@ body {
 
 #game-info strong {
     color: #222;
+}
+
+#timer {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+    background-color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #e74c3c;
+}
+
+#matches, #attempts {
+    font-weight: bold;
+    color: #e6edf1;
+    font-size: larger;
 }
 
 .title, #tagline, #game-info, #game-board, #reset-button {
@@ -213,22 +225,6 @@ body {
     max-width: 90%;
     max-height: 90%;
     object-fit: cover;
-}
-
-#timer {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #222;
-    background-color: #fff;
-    padding: 2px 6px;
-    border-radius: 4px;
-    border: 1px solid #e74c3c;
-}
-
-#matches, #attempts {
-    font-weight: bold;
-    color: #3498db;
 }
 
 #reset-button {

@@ -6,10 +6,32 @@
 
 [Visit the site here.](https://yemsala.github.io/Rainbow-Shapes-Memory-Game/)
 
-### Introduction
+<h2 align-items="center"><img src="assets/images/rsmg-site-mockup.png"></h2>
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Project Goals](#project-goals)
+- [Features](#features)
+- [User Experience](#user-experience)
+    - [User Stories](#user-stories)
+    - [Design](#design)
+        - Color Scheme
+        - Typography
+        - Imagery
+        - Wireframes
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Contact](#contact)
+
+## Introduction
 
 Welcome to the Rainbow Shapes Memory Game, built for my Milestone 2 project!  
 Dive into a world of vibrant colors and playful shapes with this Rainbow Shapes Memory Game!
+
+### Project Goals
 
 This timed web-based game, built using HTML5/CSS & Javascript, challenges your memory and reflexes as you match pairs of colorful geometric shapes against the clock. 
 You can beat your score by getting all the matches with fewer attempts and with more time left on the clock.
@@ -22,8 +44,6 @@ This game is perfect for players of all ages to help build and maintain memory m
 - Real-time tracking of matches and attempts
 - Easy-to-understand instructions for new players
 - A responsive design that works on desktop and mobile devices
-
-<h2 align-items="center"><img src="assets/images/rsmg-site-mockup.png"></h2>
 
 ### User Stories
 
@@ -58,37 +78,15 @@ This game is perfect for players of all ages to help build and maintain memory m
 
 ❌ 13. As a player, I want to be able to play easy and harder levels so I can challenge my memory further
 
-## Table of Contents
+### Project Goals
 
-- [Project Goals](#project-goals)
-- [Features](#features)
-- [User Experience](#user-experience)
-    - [User Stories](#user-stories)
-    - [Design](#design)
-        - Color Scheme
-        - Typography
-        - Imagery
-        - Wireframes
-- [Technologies Used](#technologies-used)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Credits](#credits)
-- [Contact](#contact)
+1. Create an accessible and visually appealing memory game using HTML, CSS and JavaScript.
+2. Implement core game mechanics including card flipping, matching and timer functionality.
+3. Develop a responsive design for seamless play across various devices and screen sizes.
+4. Display clear instructions and real-time feedback to enhance user experience.
+5. Promote cognitive skills such as memory, concentration and quick decision-making.
+6. Provide an engaging, replayable experience that encourages users to improve their performance.
 
-## Project Goals
-
-Netball Fanatix is a resource for netball enthusiasts and beginners alike. 
-The site aims to provide valuable information about the sport including its history, basic rules & positions and essential skills.
-It also provides video resources to watch and learn and includes a link to the England netball website for users who want to engage further.
-
-## Pages
-
-The website consists of the following pages:
-
-1. **Homepage**: Introduction to netball and the website, with a links to how to play resources.
-2. **About Netball**: Detailed explanation of what netball is, its history and how the game is played.
-3. **Netball Skills and Techniques**: Tips, advice and tutorials on essential netball skills such as passing, shooting, footwork and defending.
-4. **FAQs / Contact Us**: Answers to frequently asked questions and a contact form for inquiries.
 
 ## Features
 

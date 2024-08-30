@@ -223,10 +223,10 @@ Wireframes were created for the game in wide and narrow views, using Balsamiq. T
 
 ## Technologies Used
 
-### Languages Used
+### Languages
 
 - **HTML5**: For structuring the content on the website.
-- **CSS3**: For styling and layout.
+- **CSS**: For styling and layout.
 
 ### Frameworks, Libraries & Programs Used
 

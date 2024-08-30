@@ -243,8 +243,7 @@ Wireframes were created for the game in wide and narrow views, using Balsamiq. T
 ### Testing User Stories
 
 #### First Time Visitor Goals
-- I want to find out what Netball Fanatix is and how I can get involved in netball.
-    - Clear Mission Statement: The homepage and various sections highlight the purpose and goals of Netball Fanatix, making it clear what the site is about, particularly in the "What is Netball" section.
+- 
 
     ![Homepage Mission Statement](assets/images/testing-images/nf-mission-statement.png)
 

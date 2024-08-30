@@ -227,16 +227,16 @@ Wireframes were created for the game in wide and narrow views, using Balsamiq. T
 
 - **HTML5**: For structuring the content on the website.
 - **CSS**: For styling and layout.
+- **Javascript**: Used to help with styling and responsiveness.
 
 ### Frameworks, Libraries & Programs Used
 
-- **Javascript**: Used to help with styling and responsiveness.
+- **Balsamiq**: Used to create wireframes during project planning
 - [**Bootstrap 5**](https://getbootstrap.com/docs/5.3/getting-started/introduction/): For responsive design and additional styling components.
 - [**Google Fonts**](https://fonts.google.com/): Google fonts was used to import the 'Maitree, Quicksand & Roboto' fonts into the style.css file.
 - **Git & GitHub Pages**: Used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub. Also to securely store the code and to host and deploy the live project.
 - **GitPod**: Used as a cloud-based IDE for development
 - **Chrome Developer Tools**: Used for testing and troublshooting code
-- **Balsamiq**: Used to create wireframes during project planning
 
 ## Testing
 

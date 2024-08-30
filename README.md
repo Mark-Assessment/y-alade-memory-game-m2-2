@@ -184,30 +184,41 @@ The typography used in this game aims to be easily readable, visually appealing 
 
 ##### Imagery
 
-The imagery on the Netball Fanatix site is carefully selected to enhance the user experience and visually represent the sport of netball. Key features include:
+The Rainbow Shapes Memory Game features bright and vibrant imagery that is designed to bring the game to life for players of all ages and reinforces its cheerful, colorful theme:
 
-- High-Quality Images
-The site uses high-resolution images to create a professional and engaging visual appeal.
+1. Rainbow Card Shapes: 
+   - Each card features a geometric shape filled with a rainbow gradient.
+   - The shapes include circles, squares, triangles, stars, hearts, diamonds, hexagons and pentagons.
+   - These rainbow-filled shapes are the core visual elements, embodying the game's title and theme.
+   - The use of rainbow colors in every shape creates a cohesive and visually striking set of cards to match.
 
-- Relevant Visuals
-Images depict netball players, candid shots from games and a court outline, aligning with the site's theme and content.
+2. Card Back Design:
+   - When face-down, the cards display a uniform design with rainbow colored borders.
+   - This design choice hints at the rainbow theme without revealing the shapes.
 
-- Placement
-Images are strategically placed to complement the text, breaking up content and making the site more visually appealing.
+3. Background:
+   - The game board sits on a soft, pastel-colored background.
+   - This background complements the vibrant card designs without overwhelming them.
 
-Overall, the imagery is designed to effectively support the site's purpose, engaging visitors and enhancing the overall look.
+4. User Interface Elements:
+   - Buttons and information displays use colors that harmonize with the rainbow theme.
+   - Icons and other UI elements are minimised and designed to be visually consistent with the overall aesthetic.
+
+I initially considered using a rainbow background for the whole page, however decided this would be overpowering and perhaps take away the focus of the site purpose itslef, the game.
+
+So I decided that the rainbow effect would be best utilised within the card images themselves, reinforcing the game's theme and creating a unified experience. This subtle approach promotes focus and aids in memory association, as players connect colors and shapes.
 
 
 ### Wireframes
 
-Wireframes were created for each page in wide and narrow views, using Balsamiq. These were used as a guide for development of the site layout and structure.
+Wireframes were created for the game in wide and narrow views, using Balsamiq. These were used as a guide for development of the site layout and structure.
 
-- ![homepage-wireframes](assets/images/homepage-wireframes.png)
-- ![about-wireframe-1](assets/images/about-wireframe-1.png)
-- ![about-wireframe](assets/images/about-wireframe.png)
-- ![about-narrow-wf](assets/images/about-narrow-wf.png)
-- ![playing-wireframe](assets/images/playing-wireframe.png)
-- ![playing-narrow-wf](assets/images/playing-narrow-wf.png)
+- ![game-desktop-view](assets/images/rsmg-wireframes/rsmg-desktop-wf.png)
+- ![game-desktop-modal1-view](assets/images/rsmg-wireframes/rsmg-desktop2-wf.png)
+- ![game-desktop-modal2-view](assets/images/rsmg-wireframes/rsmg-desktop3-wf.png)
+- ![game-tablet-view](assets/images/rsmg-wireframes/rsmg-tablet-wf.png)
+- ![game-narrow-wf](assets/images/rsmg-wireframes/rsmg-narrow-wf.png)
+- ![game-narrow1-wf](assets/images/rsmg-wireframes/rsmg-narrow2-wf.png)
 
 
 ## Technologies Used

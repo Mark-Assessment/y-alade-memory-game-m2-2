@@ -92,51 +92,56 @@ This game is perfect for players of all ages to help build and maintain memory m
 
 ### Existing Features
 
-- Cards are shuffled and placed randomly at the start of each game.
+1. Cards are shuffled and placed randomly at the start of each game.
 
-- A gameboard displaying 16 cards face down. You can flip over two cards at a time by clicking on them.
+2. A gameboard displaying 16 cards face down. You can flip over two cards at a time by clicking on them.
 
-- If the two flipped cards don't match, they flip back over.
+3. If the two flipped cards don't match, they flip back over.
 
-- When you find a matching pair, the cards stay face-up and can't be clicked again.
+4. When you find a matching pair, the cards stay face-up and can't be clicked again.
 
-- Your attempt counter increments with every two cards flipped.
+5. Your attempt counter increments with every two cards flipped.
 
-- Your score increments each time you find a match.
+6. Your score increments each time you find a match.
 
-- You can start a new game or reset the current one. Cards can't be flipped until the game starts.
+7. You can start a new game or reset the current one. Cards can't be flipped until the game starts.
 
-- You have 60 seconds to find all the matches.
+8. You have 60 seconds to find all the matches.
 
-- The game tells you if you've won or if you should try again.
+9. The game tells you if you've won or if you should try again.
 
 ### Post MVP Features
 
-- You can select from Easy/Intermediate/Difficult options and vary the game challenge based on selection.
-- You can register your name at the start and save your scores to be displayed. You can then continue to try to beat your earlier scores by playing new games.
-- Integrate a leaderboard so users can see previous users' scores and try to beat them.
+10. You can select from Easy/Intermediate/Difficult options and vary the game challenge based on selection.
+12. You can register your name at the start and save your scores to be displayed. You can then continue to try to beat your earlier scores by playing new games.
+13. Integrate a leaderboard so users can see previous users' scores and try to beat them.
+14. Feedback mechanism for users to submit feedback and suggestions for improvements.
 
 ## User Experience
 
 ### User Stories
 
 #### User Goals
-- To be able to view the site on a range of device sizes.
-- To make it easy for potential netball enthusiasts to find out about the sport and how to get involved.
-- To provide clear information about upcoming netball events and activities.
-- To allow visitors to contact Netball Fanatix for further questions or feedback.
+- Access and play the game easily on various devices.
+- Have fun playing an interactive memory game.
+- Experience smooth and responsive gameplay.
+- Receive immediate feedback on game performance.
+- Replay the game multiple times without loss of interest.
 
 #### First Time Visitor Goals
-- I want to find out what Netball Fanatix is and how I can get involved in netball.
-- I want to be able to navigate the site easily to find information about netball.
-- I want to be able to find their social media profiles for more updates and engagement.
+1. I want to quickly understand the game's concept and rules.
+2. I want to navigate the game interface easily.
+3. I want to successfully complete a game to understand the gameplay flow.
 
 #### Returning Visitor Goals
-- I want to find up-to-date information on upcoming netball events and activities.
-- I want to be able to easily contact Netball Fanatix with questions or feedback.
+1. I want to improve on my previous performance (score/attempts/completion time).
+2. I want to experience consistent performance across different devices.
+3. I want to explore any new features or updates since my last visit.
 
 #### Frequent Visitor Goals
-- I want to be able to recommend drills, tutorials or tips for inclusion on the site.
+1. I want to beat and save my personal best records.
+2. I want to enjoy the game as a regular brain-training exercise.
+3. I want to suggest improvements or new features based on my extensive experience.
 
 ### Design
 

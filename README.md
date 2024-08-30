@@ -145,31 +145,41 @@ This game is perfect for players of all ages to help build and maintain memory m
 
 ### Design
 
-##### Color Palette
+#### Color Palette
 
-![Color palette](assets/images/coolors-palette.png)
-The website uses a palette of colours based around the bespoke logo image to maintain a standard identity across all pages. The colour palette was created using the Coolors website.
+![Color palette](assets/images/rsmg-palette.png)
+The website uses a palette of colours based around the page title/logo and the overall background to keep a clear focus on the game elements and ensure they stand out well enough to engage the user's attention. The colour palette was created using the [Coolors website](https://coolors.co/) .
 
-##### Typography
+### Typography
 
-The typography used on the Netball Fanatix site focuses on readability and a modern, clean aesthetic.
+The typography used in this game aims to be easily readable, visually appealing and supportive of the overall game aesthetics without distracting from the gameplay. 
 
-The Maitree font is used for title headings and navigation with sans-serif as a fall-back option should the chosen font fail to function properly. 
-Quicksand & Roboto are used as the main fonts for the body content with serif as the fallback font should fthe chosen fonts not load correctly to the website. 
+- Font Family
+    - The game primarily uses the 'Roboto' font, a clean and modern sans-serif typeface.
+    - A fallback to generic sans-serif fonts is provided for better cross-platform compatibility. 
 
 - Font Sizes
 
-The font sizes are appropriately varied to create a clear visual hierarchy. Larger sizes are used for headings and titles, making them stand out and guide the user's attention. Body text is set at a comfortable reading size.
+    - The main title uses a large font size (2.5rem or about 40px) for prominence.
+    - Game information text (timer, matches, attempts) uses medium sizes.
+    - The timer digits are emphasized with a larger size (2em or about 32px) for quick readability.
+    - Button text and general content use a standard size (16px) for comfortable reading.
 
 - Font Weights
- A mix of font weights is used to differentiate between various text elements. Bold weights are used for headings and important information, while regular weights are used for body text.
+ 
+    - A mix of font weights is used to differentiate between various text elements. Bold weights are used for headings and important information, while regular weight (400) is used for body text.
+    - The game title use a bold weight (700) to stand out.
+    - The timer digits use a bold weight to draw attention.
 
 - Text Alignment
 
-Text alignment is primarily left-aligned, which is the most readable format for English text. Center alignment is used sparingly for elements such as titles and form labels to create emphasis.
+    - The game title and main headings are center-aligned for a balanced appearance.
+    - Game information and instructions are typically left-aligned for easy scanning.
+    - Button text is center-aligned within the buttons.
 
 - Line Spacing and Letter Spacing
-Generous line spacing and appropriate letter spacing ensure that the text is not cramped, improving overall legibility.
+
+     - Generous line spacing and appropriate letter spacing ensure that the text is not cramped, improving overall legibility.
 
 
 ##### Imagery

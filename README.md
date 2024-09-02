@@ -324,14 +324,14 @@ The Google Page-speed Services was used to assess the accessibility of the proje
 - Testing was done to ensure that all intended functionality is working correctly and with good performance
 - Friends and family members reviewed the game and documentation to point out any bugs and/or user experience issues.
 
-#### Performance By Page
+<!-- #### Performance By Page
 
 | Page        | Result           | Notes  |
 | ------------- |:-------------:| -----:|
 | Home | ![Home page performance](assets/images/testing-images/homepage-performance-test.png)   |   Reasonably good performance with areas for improvement   |
 | About Netball      | ![About page performance](assets/images/testing-images/about-page-performance.png)    |  Some areas for improvement but good overall  |
 | Playing Netball |  ![Playing page performance](assets/images/testing-images/playing-page-performance.png)    |  More work is needed to improve performance   |
-| Contact |   ![Contact page performance](assets/images/testing-images/contact-page-performance.png)    |  This is the best performing page with 100% accessibility   |
+| Contact |   ![Contact page performance](assets/images/testing-images/contact-page-performance.png)    |  This is the best performing page with 100% accessibility   | -->
 
 ### Code Validation
 

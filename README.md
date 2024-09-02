@@ -250,8 +250,8 @@ The site achieves this goal through:
 - Clear Instructions: A clear subtitle at the top of the page with an easily accessible "How to play" button, which opens a modal with concise, step-by-step instructions.
 - Visual Cues: The game board's layout with face-down cards intuitively suggests a memory matching game.
 
-    ![Subtitle CTA]()
-    ![How To Play Modal]()
+    ![Subtitle CTA](assets/images/testing/user-story-testing-images/subtitle-cta.png)
+    ![How To Play Modal](assets/images/testing/user-story-testing-images/how-to-play-modal.png)
 
 #### 2. Navigate the game interface easily
 
@@ -262,8 +262,8 @@ The site facilitates easy navigation by:
 - Clear Buttons: The "Reset Game" and "How to play" buttons are distinctly visible and labeled.
 
 
-    ![Responsive screen display]()
-    ![Clearly Labeled Buttons]()
+    ![Responsive screen display](assets/images/testing/user-story-testing-images/responsive-screen-display.png)
+    ![Clearly Labeled Buttons](assets/images/testing/user-story-testing-images/clearly-labeled-buttons.png)
 
 #### 3. Successfully complete a game to understand the gameplay flow
 
@@ -274,8 +274,8 @@ The site supports this goal through:
 - End-game Feedback: Upon completion (win or lose), a modal appears with the game results, clearly marking the end of a round.
 - Replay Option: The option to play again is immediately presented, encouraging players to try again.
 
-    ![Game Over Modal]()
-    ![Matched Cards]()
+    ![Game Over Modal](assets/images/testing/user-story-testing-images/game-over-modal.png)
+    ![Matched Cards](assets/images/testing/user-story-testing-images/matched-vards-view.png)
 
 
 ### Returning Visitor Goals
@@ -291,9 +291,7 @@ The site supports this goal through:
 
     | Desktop       | Tablet        | Mobile |
     |:-------------:|:-------------:|:-----:|
-    | col 3 is      | right-aligned | $1600 |
-    | col 2 is      | centered      |   $12 |
-    | zebra stripes | are neat      |    $1 |
+    | ![Desktop View](assets/images/testing/user-story-testing-images/desktop-view.png)    | ![Tablet View](assets/images/testing/user-story-testing-images/tablet-view.png)| ![Mobile View](assets/images/testing/user-story-testing-images/mobile-view.png) |
 
 #### 3. Explore new features or updates since last visit
 
@@ -306,16 +304,15 @@ The site supports this goal through:
 
 #### 2. Enjoy the game as a regular brain-training exercise
 
-- Randomized Card Placement: Each new game shuffles the card positions, ensuring a fresh challenge for memory skills every time.
+- Randomized Card Placement: Each new game shuffles the card positions, ensuring a fresh challenge every time.
 - Timed Gameplay: The 60-second countdown adds pressure, training quick thinking and decision-making alongside memory.
-
 
     
 ### Overall Performance
 
 #### Chrome DevTools Audit Report
 
-The Google Page-speed Services were used to assess the accessibiity of the project to ensure the site met expected accessible standards on desktop and mobile.
+The Google Page-speed Services was used to assess the accessibility of the project to ensure the site met expected accessible standards on desktop and mobile.
 
 ![Homepage code validation](assets/images/testing-images/code-validation-homepage.png) 
 

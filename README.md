@@ -324,7 +324,7 @@ The Google Page-speed Services was used to assess the accessibility of the proje
 - Testing was done to ensure that all intended functionality is working correctly and with good performance
 - Friends and family members reviewed the game and documentation to point out any bugs and/or user experience issues.
 
-### Code Validation
+<!-- ### Code Validation
 
 Each page of the project was thoroughly checked for syntax errors using the W3C Markup Validator and W3C CSS Validator Services. The validation results and corresponding screenshots are presented in the table below.
 
@@ -443,4 +443,4 @@ Thank you for visiting Netball Fanatix!
 
 
 
-
+ -->

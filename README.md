@@ -238,49 +238,79 @@ Wireframes were created for the game in wide and narrow views, using Balsamiq. T
 - **GitPod**: Used as a cloud-based IDE for development
 - **Chrome Developer Tools**: Used for testing and troublshooting code
 
-## Testing
+# Testing
 
-### Testing User Stories
+## Testing User Stories
 
-#### First Time Visitor Goals
-- 
+### First Time Visitor Goals
+#### 1. Quickly understand the game's concept and rules
 
-    ![Homepage Mission Statement](assets/images/testing-images/nf-mission-statement.png)
+The site achieves this goal through:
 
-    - About Netball Page: Provides comprehensive information on netball, including its history and significance.
+- Clear Instructions: A clear subtitle at the top of the page with an easily accessible "How to play" button, which opens a modal with concise, step-by-step instructions.
+- Visual Cues: The game board's layout with face-down cards intuitively suggests a memory matching game.
 
-    ![Netball History](assets/images/testing-images/assets/images/testing-images/netball-history.png)
+    ![Subtitle CTA]()
+    ![How To Play Modal]()
 
-    - Playing Netball Page: Offers tips, drills and video tutorials, guiding visitors on how to get started and improve their skills.
+#### 2. Navigate the game interface easily
 
-    ![Netball Tips](assets/images/testing-images/netball-tips.png)
+The site facilitates easy navigation by:
 
-- I want to be able to navigate the site easily to find information about netball.
-    - Responsive Design: Ensures the site is accessible and easy to navigate on all device sizes.
-    - Intuitive Menu: A well-structured navigation bar with clear labels and dropdowns, making it easy to find relevant sections.
-    - Consistent Layout: Uniform design elements and page structures help users quickly locate information across different pages.
+- Simple Layout: The game board, timer and score information are prominently displayed
+- Responsive Design: The game adapts to different screen sizes, ensuring easy interaction on various devices.
+- Clear Buttons: The "Reset Game" and "How to play" buttons are distinctly visible and labeled.
 
-    ![Header Navigation](assets/images/testing-images/nav-dropdown.png)
 
-- I want to be able to find their social media profiles for more updates and engagement.
-    - Footer Links: Social media icon with link to relevant site (e.g. England Netball) is prominently displayed in the footer.
-    - Contact Page: Provides additional means to connect and follow updates via the form, ensuring visitors can engage further.
+    ![Responsive screen display]()
+    ![Clearly Labeled Buttons]()
 
-    ![Footer Links](assets/images/testing-images/footer-links.png)
+#### 3. Successfully complete a game to understand the gameplay flow
 
-#### Returning Visitor Goals
-- I want to find up-to-date information on upcoming netball events and activities.
-    - Homepage: Users can easily navigate to the England Netball website via the footer link to find out about current events and activities in their local area.
-- I want to be able to easily contact Netball Fanatix with questions or feedback.
-    - Contact Page: A user-friendly contact form allowing visitors to submit their questions or feedback easily.
+The site supports this goal through:
 
-     ![Feedback form](assets/images/testing-images/feedback-form.png)
+- Visual Feedback: Matched pairs remain face-up, providing a clear sense of progress.
+- Real-time Updates: The score and timer constantly update, keeping the player informed of their progress and remaining time.
+- End-game Feedback: Upon completion (win or lose), a modal appears with the game results, clearly marking the end of a round.
+- Replay Option: The option to play again is immediately presented, encouraging players to try again.
 
-#### Frequent Visitor Goals
-- I want to be able to recommend drills, tutorials or tips for inclusion on the site.
-    - Contact Page: Users can use the feedback form to submit suggestions or recommendations for other tips, drills and tutorials
-    - These goals would be further addressed with the planned post-MVP features such as Engagement Feature & Community Involvement.
+    ![Game Over Modal]()
+    ![Matched Cards]()
 
+
+### Returning Visitor Goals
+
+#### 1. Improve on previous performance (score/attempts/completion time)
+
+- Real-time Feedback: The game displays current score, attempts and remaining time, allowing players to gauge their performance against previous sessions.
+- End-game Summary: After each game, a results modal shows the final score and time.
+
+#### 2. Experience consistent performance across different devices
+
+- Responsive Design: The game's layout adapts seamlessly to different screen sizes, maintaining playability on both desktop and mobile devices.
+
+    | Desktop       | Tablet        | Mobile |
+    |:-------------:|:-------------:|:-----:|
+    | col 3 is      | right-aligned | $1600 |
+    | col 2 is      | centered      |   $12 |
+    | zebra stripes | are neat      |    $1 |
+
+#### 3. Explore new features or updates since last visit
+
+❌ - yet to be implemented
+
+- Version Information: The game's footer or about section could include the current version number or last update date, alerting returning players to potential changes.
+- Change Log: A dedicated section (accessible via a button or link) could list recent updates and new features, helping returning players discover what's new.
+
+### Frequent Visitor Goals
+
+#### 2. Enjoy the game as a regular brain-training exercise
+
+- Randomized Card Placement: Each new game shuffles the card positions, ensuring a fresh challenge for memory skills every time.
+- Timed Gameplay: The 60-second countdown adds pressure, training quick thinking and decision-making alongside memory.
+
+
+    
 ### Overall Performance
 
 #### Chrome DevTools Audit Report

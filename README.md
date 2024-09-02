@@ -314,14 +314,15 @@ The site supports this goal through:
 
 The Google Page-speed Services was used to assess the accessibility of the project to ensure the site met expected accessible standards on desktop and mobile.
 
-![Homepage code validation](assets/images/testing-images/code-validation-homepage.png) 
+![Desktop page validation](assets/images/testing/site-performance/overall-performance-desktop.png) 
+![Mobile page validation](assets/images/testing/site-performance/overall-performance-mobile.png) 
 
 ### Browser Testing
 
 - The site has been tested on Google Chrome, Safari, Microsoft Edge and Firefox browsers.
 - The website was tested on my iPhone 13 mobile. All other responsive testing was completed online.
-- Testing was done to ensure that all pages were linking correctly and external links opened in a new tab.
-- Friends and family members reviewed the site and documentation to point out any bugs and/or user experience issues.
+- Testing was done to ensure that all intended functionality is working correctly and with good performance
+- Friends and family members reviewed the game and documentation to point out any bugs and/or user experience issues.
 
 #### Performance By Page
 

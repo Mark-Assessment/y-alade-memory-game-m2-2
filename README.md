@@ -340,6 +340,8 @@ Each page of the project was thoroughly checked for syntax errors using the W3C 
 
 1. I notice that it would be more helpful for the scoreboard to be 'sticky' on narrow/mobile view so that the timer is still visible for a better user experience. I am doing some work to adjust the code so that this is possible on mobile view when the user scrolls down the page and they know how much time they have left.
 
+2. I cahnged the media query for mbile view to display 4 in a row instead of 2, to save users having to scroll up and down the page to view all the cards and play the game. It also ensures the timer is more visible and does not disappear out of sight.
+
 | Desktop       | Mobile           |
 | ------------- |:-------------:|
 | ![About page desktop](assets/images/testing-images/about-page-desktop.png)     | ![About page mobile 1](assets/images/testing-images/about-page-mobile1.png) ![About page mobile 2](assets/images/testing-images/about-page-mobile2.png) |

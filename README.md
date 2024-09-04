@@ -78,6 +78,8 @@ This game is perfect for players of all ages to help build and maintain memory m
 
 ❌ 13. As a player, I want to be able to play easy and harder levels so I can challenge my memory further
 
+❌ 14. As a player, I want to hear sounds to accompany my game play, so that I am more engaged and encouraged when playing a round (feedback taken from my 9yr old's suggestion).
+
 ### Project Goals
 
 1. Create an accessible and visually appealing memory game using HTML, CSS and JavaScript.

@@ -314,7 +314,7 @@ body {
     }
 
     #game-board {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 8px;
         padding: 10px;
     }

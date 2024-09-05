@@ -24,7 +24,6 @@
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -452,11 +451,6 @@ Click [Here](https://docs.github.com/en/repositories/creating-and-managing-repos
 
 
 - For mock-up generation [Mockup Generator](https://websitemockupgenerator.com/)
-
-
-## Contact
-
-For any inquiries or feedback, please contact me via the contact form (to be implemented).
 
 ---
 </div>

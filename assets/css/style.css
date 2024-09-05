@@ -249,11 +249,11 @@ body {
 }
 
 #css-validated {
-    position: absolute;
+    position: fixed;
     bottom: 10px;
     right: 10px;
     z-index: 500;
-    margin-top: 10px; 
+    margin-top: 20px; 
 }
 
 #css-validated p {
@@ -279,16 +279,6 @@ body {
     
     #tagline {
         font-size: 1rem;
-    }
-
-    #css-validated {
-        bottom: 5px;
-        right: 5px;
-    }
-
-    #css-validated img  {
-        width: 70px;
-        height: auto;
     }
 }
 
@@ -325,6 +315,16 @@ body {
 
 #endGameCloseBtn:hover {
     background-color: #45a049;
+}
+
+#css-validated {
+    bottom: 5px;
+    right: 5px;
+}
+
+#css-validated img  {
+    width: 70px;
+    height: auto;
 }
 
 

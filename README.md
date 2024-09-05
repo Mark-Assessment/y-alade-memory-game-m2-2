@@ -326,36 +326,47 @@ The Google Page-speed Services was used to assess the accessibility of the proje
 - Testing was done to ensure that all intended functionality is working correctly and with good performance
 - Friends and family members reviewed the game and documentation to point out any bugs and/or user experience issues.
 
-<!-- ### Code Validation
+### Code Validation
 
-Each page of the project was thoroughly checked for syntax errors using the W3C Markup Validator and W3C CSS Validator Services. The validation results and corresponding screenshots are presented in the table below.
+#### HTML validation
+I used W3C to test and validate html and css code.
 
-|  Page        | Result           | Notes  |
+|  Language       | Result           | Notes  |
 | ------------- |:-------------:| -----:|
-| Home | ![Homepage code validation](assets/images/testing-images/homepage-performance-test1.png)  |  No errors |
-| About Netball | ![About page code validation](assets/images/testing-images/code-validation-about-page.png)    | No errors   |
-| Playing Netball |![Playing page code validation](assets/images/testing-images/code-validation-playing-page.png)    |  No errors  |
-| Contact |![Playing page code validation](assets/images/testing-images/code-validation-contact-page.png)    | No errors  |
-| CSS |![CSS code validation](assets/images/testing-images/w3c-css-validation.png)    | Passed (initial parsing error resolved)  |
+| HTML | ![HTML code validation](assets/images/testing/code-validation/w3c-html-validation.png)  |  No errors |
+| CSS | ![CSS code validation](assets/images/testing/code-validation/w3c-css-validation.png)    | No errors   |
+
+
+#### JS Validation
+
+I used an online tool I found called Esprima to validate the javascript code.
+
+![JS code validation](assets/images/testing/code-validation/js-validation.png) 
+
+Metrics:
+- There are 18 functions in this file.
+
+- Function with the largest signature take 2 arguments, while the median is 0.
+
+- Largest function has 14 statements in it, while the median is 2.5.
+
+- The most complex function has a cyclomatic complexity value of 6 while the median is 1.
+
 
 ### Bug fixes
 
-1. I notice that it would be more helpful for the scoreboard to be 'sticky' on narrow/mobile view so that the timer is still visible for a better user experience. I am doing some work to adjust the code so that this is possible on mobile view when the user scrolls down the page and they know how much time they have left.
+1. I initially styled the cards to display in a 2-row grid on narrow/mobile view, which meant users would need to scroll down the page to view all the game-board content. I noticed that it would be helpful for the scoreboard to be 'sticky' so that the timer is visible all the time, for a better user experience. 
+My initial plan was to adjust the timer element to be sticky, however I decided on another solution to achieve the same outcome.
 
-2. I cahnged the media query for mbile view to display 4 in a row instead of 2, to save users having to scroll up and down the page to view all the cards and play the game. It also ensures the timer is more visible and does not disappear out of sight.
+2. I decided instead to adjust the media query for narrow screen views to still display a 4-row grid instead of 2, to save users having to scroll up and down the page to view all the cards and play the game. The cards are smaller in size but still easy to view, tap and navigate through. It also ensures the timer remains visible.
 
-| Desktop       | Mobile           |
-| ------------- |:-------------:|
-| ![About page desktop](assets/images/testing-images/about-page-desktop.png)     | ![About page mobile 1](assets/images/testing-images/about-page-mobile1.png) ![About page mobile 2](assets/images/testing-images/about-page-mobile2.png) |
 
-3. On initial validation of my CSS code, I kept getting a parsing error for line 367, where I had an element nested inside another for the videos on the Playing Netball page and the validator didn't like that and therefore kept throwing up this error. 
-To solve this issue, I removed, the *.col-3* element out of the *.tutorial-videos* element and although I was worried it might affect the output, it didn't. After doing this, I was able to pass the CSS code validation (see relevent screenshot in the *Code Validation* section above).
 
 ## Deployment
 
 ### Github Pages
 
-1. Access Your GitHub Repository
+1. Access Your [GitHub Repository](https://github.com)
     - Log into GitHub and navigate to the repository you're working with.
     
 2. Find the "Settings" Option
@@ -365,12 +376,12 @@ To solve this issue, I removed, the *.col-3* element out of the *.tutorial-video
     - On the Settings page, scroll down until you find the "GitHub Pages" section.
 
 4. Select the Source for Your Site
-    - In the "Source" section, use the dropdown menu (initially set to "None") and select "Main Branch" (or "Master Branch" if that's what your repository uses).
+    - In the "Source" section, use the dropdown menu (initially set to "None") and select "main branch" (or "Master Branch" if that's what your repository uses).
 
 5. Wait for Page Refresh
     - The page will refresh automatically after you select the branch.
 
-6. Scroll back down through the page to locate the now published site [link](https://yemsala.github.io/netball-fanatic/index.html)  in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://yemsala.github.io/Rainbow-Shapes-Memory-Game/)  in the "GitHub Pages" section.
 
 ### Forking the GitHub Reository
 
@@ -390,56 +401,62 @@ You should now have a copy of the original repository in your GitHub account.
 6. Type git clone, and then paste the URL you copied in Step 3.
 
 
-$ git clone https://github.com/YemsAla/netball-fanatic.git
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 7. Press Enter. Your local clone will be created.
 
 $ git clone https://github.com/YemsAla/netball-fanatic.git
 
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
 > remove: Total 10 (delta 1), reused 10 (delta 1)
 > Unpacking objects: 100% (10/10), done.
 
-Click [Here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+Click [Here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for more details.
 
 ## Credits
 
 ### Acknowledgements
 
-- Cohort Leader Rachel Furlong for her continued support.
+- Cohort Leader Rachel Furlong for helpful resource suggestions and continued support.
 - Tutor support at Code Institute for their support.
-- Vernell C | [https://github.com/VCGithubCode]
-    - Fellow student who provided invaluable mentorship and support during each stage of the project, especially in debugging.
+- Fellow CI colleague - Vernell C | [https://github.com/VCGithubCode]
+    - Acted as a valuable peer reviewer for my code and helping me to develop the most effective coding style suitable to me. 
+- Mentor Akshat Garg for help and direction.
 
-### References
+#### Theme images
 
-- Source: YouTube | 
-- Source: W3Schools | [https://www.w3schools.com/]
-    - Used for HTML & CSS code 
-- Source: Chat GPT
-    - For content & research
-? https://websitemockupgenerator.com/
-- Picture References
-    - Source: Cynon Netball Club | [https://connectrct.org.uk/activity/cynon-back-to-netball-club]
-    - Source: Gilbert Netball | [https://www.gilbert-netball.com/blogs/netball/netball-101]
-    - Source: Linked-In |The Pivot Newsletter | [https://www.linkedin.com/pulse/pivot-jacob-william-gooden/]
-    - Source: England Netball | [https://www.linkedin.com/pulse/pivot-jacob-william-gooden/]
-    - Source: Netball Australia |[https://netball.com.au/news/immense-sense-achievement-and-pride-teede-recalls-71-world-netball-tournament]
-    - Source: World Netball | [https://netball.sport/game/facilities-and-equipment/]
-    - Source: Play Netball | [https://www.play-netball.co.uk/rules-and-regulations/]
-- Videos
-    - Source: intosport.com | [https://www.youtube.com/watch?v=TvfGjq7cWfA]
-    - Source: Netball Australia| [https://www.youtube.com/watch?v=N_kiYeeYvkU&t=12s]
-    - Source: Netball Australia| [https://www.youtube.com/watch?v=lzPJPCg5SCg]
-    - Source: Netball Australia| [https://www.youtube.com/watch?v=rtnDm52t_eM&list=PLgCNJssaP1-xN6wILskPThBNxXFrNX368&index=5] 
+- Hearts - [Heart Rainbow Shape](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2QAqU_XGxOei1g1kdOs5TkglZZxclF8n6TF2B4CKbeloQTYln)
+- Triangles - [Triangle Rainbow Shape](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMEeHr8WCyPq9eCl5ll9RssXUeiamU4IXNe3s1FtqR6B-5l2_P)
+- Circles - [Circle Rainbow Shape](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Ex1ubiM94aoJ1jNjifTbAT_0yoqqkV_KCL4vhgBdsF7x1n41)
+- Squares - [Square Rainbow Shape](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpIBRrxzLYcDgeaCbmtQtOvw-pyPyCoxDAfqf2kl_VgXVqARZ6)
+- Stars - [Star Rainbow Shape](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJUqpOn6CM4TvKxVDG5I-x-FhqHv8pu_O_agfHBtk6b45t7PXu)
+- Pentagons - [Pentagon Rainbow Shape](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17arOw2fc6J7A7U9i7p52HXtyR29UsXNe8-SxIoHqAPqSnPve)
+- Hexagons - [Hexagon Rainbow Shape](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNIx1RHgBvWo7KjNjEU2ALdngLVbUUljVGfRTwMmjbx9pchvBz)
+- Diamonds - [Diamond Rainbow Shape ](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSp_iP18S6HVknN4hGeLScxobHtsavyyFddykKRCfZxf6okNMPz)
+
+
+#### Code
+
+- Memory game process research [Rachel Furlong](https://github.com/RachelFurlong-dev/bug-match-M2/blob/main/README.md)
+
+- Memory game process research [Vernell C Hackathon Memory Game](https://vcgithubcode.github.io/retro-game/memory.html)
+
+- Memory game process research [Javascript Academy YouTube](https://www.youtube.com/watch?v=xWdkt6KSirw)
+
+- Chat GPT for creating identical card pairs process, correct code to flip card and correct code to display modals.
+
+- CSS style inspiration [W3C Schools CSS](https://www.w3schools.com/css/default.asp)
+
+
+- For mock-up generation [Mockup Generator](https://websitemockupgenerator.com/)
+
 
 ## Contact
 
-For any inquiries or feedback, please contact us via the contact form on the website or reach out on our social media channels.
-
-Thank you for visiting Netball Fanatix!
+For any inquiries or feedback, please contact me via the contact form (to be implemented).
 
 ---
 </div>
@@ -447,4 +464,4 @@ Thank you for visiting Netball Fanatix!
 
 
 
- -->
+

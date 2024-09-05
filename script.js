@@ -15,7 +15,6 @@ const endGameCloseBtn = document.getElementById('endGameCloseBtn');
 let cards = [];
 let firstCard = '';
 let secondCard = '';
-let flippedCards = [];
 let matches = 0;
 let attempts = 0;
 let timeLeft = 60;
@@ -212,7 +211,7 @@ window.addEventListener('click', function(event) {
 });
 
 
-resetButton.addEventListener('click', initialiseGame)
+resetButton.addEventListener('click', initialiseGame);
         
 
 

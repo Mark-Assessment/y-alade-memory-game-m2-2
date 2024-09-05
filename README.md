@@ -102,7 +102,7 @@ This game is perfect for players of all ages to help build and maintain memory m
 
 4. When you find a matching pair, the cards stay face-up and can't be clicked again.
 
-5. Your attempt counter increments with every two cards flipped.
+5. Your attempt counter increments with every attempted match (two cards flipped).
 
 6. Your score increments each time you find a match.
 

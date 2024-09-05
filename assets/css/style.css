@@ -15,7 +15,6 @@ body {
     padding: 20px;
     min-height: 100vh; 
     margin: 0;
-    /* background-image: url('../images/rainbow-background2.jpg');  */
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -26,7 +25,6 @@ body {
 .title {
     text-align: center;
     font-style: italic;
-    border-style: 2px #333;
     font-size: xx-large;
     color: rgb(52, 47, 39);
     margin-bottom: 30px;
@@ -49,7 +47,8 @@ body {
     text-align: center;
     color: #fa4f25;
     margin-bottom: 10px;
-    font-weight: 800px;
+    font-weight: 600;
+    
     background-color: rgba(250, 246, 246, 0.9);
     padding: 5px;
     border-radius: 1px;
@@ -126,7 +125,6 @@ body {
     margin-bottom: 15px;
     color: #fafafa;
     font-weight: bold;
-    text-shadow: #333;
     font-size: 24px;
     text-transform: capitalize;
     text-decoration: wavy;
@@ -158,13 +156,13 @@ body {
     border-radius: 4px;
     border: 1px solid #e74c3c;
     min-width: 2em;
+    text-align: center;
 }
 
 #matches, #attempts {
     font-weight: bold;
     color: #e7eff3;
     font-size: larger;
-    text-shadow: #222;
 }
 
 .title, #tagline, #game-info, #game-board, #reset-button {
@@ -177,7 +175,8 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     max-width: 600px;
-    margin-top: 20px auto;
+    /* margin-top: 20px; */
+    margin: 20px auto 30px;
 }
 
 .card {

@@ -241,6 +241,8 @@ Wireframes were created for the game in wide and narrow views, using Balsamiq. T
 
 # Testing
 
+I’ve largely the used manual testing method, which is outlined below. Manual testing is great for spotting unexpected issues because it allows real life testing by others, which helps catch things like UX design problems or coding errors. It’s also useful for finding situations I might not have thought of during development.
+
 ## Automated Testing (TDD)
 
 Using code to test our code offers several advantages over manual testing. Automated testing allows hundreds of tests to be executed quickly, ensuring that errors are identified early since tests are typically written by developers during the development process.

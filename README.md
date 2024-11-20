@@ -241,6 +241,12 @@ Wireframes were created for the game in wide and narrow views, using Balsamiq. T
 
 # Testing
 
+## Automated Testing (TDD)
+
+Using code to test our code offers several advantages over manual testing. Automated testing allows hundreds of tests to be executed quickly, ensuring that errors are identified early since tests are typically written by developers during the development process.
+
+However, the effectiveness of automated tests depends on the quality of the questions they address. Poorly designed tests can become superficial, providing a false sense of security. Additionally, automated tests do not evaluate the user experience. Therefore, the most effective testing strategy combines both automated and user testing methods.
+
 ## Testing User Stories
 
 ### First Time Visitor Goals
